@@ -19,10 +19,10 @@ export const skillCategories: SkillCategory[] = [
     label: 'Frontend',
     skills: [
       { name: 'React' },
-      { name: 'HTML5', usedIn: ['breakdown', 'melty', 'crm'] },
-      { name: 'CSS3', usedIn: ['breakdown', 'melty'] },
+      { name: 'HTML5', usedIn: ['breakdown', 'melty', 'crm', 'newstart'] },
+      { name: 'CSS3', usedIn: ['breakdown', 'melty', 'newstart'] },
       { name: 'Tailwind CSS', usedIn: ['crm'] },
-      { name: 'Responsive web design', usedIn: ['breakdown', 'melty'] },
+      { name: 'Responsive web design', usedIn: ['breakdown', 'melty', 'newstart'] },
       { name: 'GSAP & ScrollTrigger', usedIn: ['breakdown'] },
       { name: 'Canvas API', usedIn: ['breakdown'] },
       { name: 'Vite', usedIn: ['crm'] },
@@ -46,7 +46,7 @@ export const skillCategories: SkillCategory[] = [
     label: 'Languages',
     skills: [
       { name: 'Python', usedIn: ['crm', 'mopuri', 'health', 'motioncut'] },
-      { name: 'JavaScript (ES6+)', usedIn: ['crm', 'mopuri', 'breakdown', 'melty'] },
+      { name: 'JavaScript (ES6+)', usedIn: ['crm', 'mopuri', 'breakdown', 'melty', 'newstart'] },
       { name: 'SQL', usedIn: ['mopuri', 'crm'] },
       { name: 'Java (foundational)', usedIn: ['kodnest'] },
     ],

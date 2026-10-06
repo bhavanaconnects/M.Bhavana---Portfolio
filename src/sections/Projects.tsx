@@ -17,7 +17,7 @@ export function Projects({ onOpenProject }: { onOpenProject: (id: string) => voi
         <SectionHeading
           id="projects"
           title="Selected projects"
-          lead="Backend-heavy applications, a scroll-driven frontend and an applied ML tool. Open any project for the full breakdown."
+          lead="Backend-heavy applications, a scroll-driven frontend, a data-driven business-services site and an applied ML tool. Open any project for the full breakdown."
         />
 
         <div className="grid gap-5 lg:gap-6">
@@ -34,6 +34,9 @@ export function Projects({ onOpenProject }: { onOpenProject: (id: string) => voi
           </div>
           <Reveal>
             <ProjectCard project={byId('breakdown')} layout="wide-reverse" onOpen={onOpenProject} />
+          </Reveal>
+          <Reveal>
+            <ProjectCard project={byId('newstart')} layout="wide" onOpen={onOpenProject} />
           </Reveal>
         </div>
 

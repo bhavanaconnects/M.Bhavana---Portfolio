@@ -19,7 +19,49 @@ export function ProjectVisual({ kind, compact = false }: { kind: ProjectVisualKi
       return <MlVisual />;
     case 'pages':
       return <PagesVisual />;
+    case 'services':
+      return <ServicesVisual />;
   }
+}
+
+const dataFiles = ['services-index', 'prices', 'compliance-dates'];
+const consumers = ['Search', 'Pricing', 'Enquiry wizard', '8 calculators', 'Calendar', 'Chat'];
+
+function ServicesVisual() {
+  return (
+    <Panel>
+      <div className="mx-auto grid max-w-[460px] grid-cols-[minmax(0,1fr)_minmax(0,1fr)] gap-3 sm:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)]">
+        <div className="min-w-0 rounded-xl bg-ink p-3 text-white shadow-lg">
+          <p className="mb-2 font-mono text-[10.5px] text-white/50">shared data files</p>
+          <div className="space-y-1.5">
+            {dataFiles.map((f) => (
+              <div key={f} className="flex h-7 min-w-0 items-center gap-1.5 rounded-md bg-white/[0.07] px-1.5 font-mono text-[9.5px] lg:gap-2 lg:px-2 lg:text-[10.5px]">
+                <span className="size-1.5 shrink-0 rounded-full bg-signal" />
+                <span className="truncate">{f}</span>
+              </div>
+            ))}
+          </div>
+          <div className="mt-2 flex h-7 items-center gap-2 rounded-md border border-dashed border-white/20 px-2 text-[12px] text-white/70">
+            <FileText size={13} className="shrink-0" /> <span className="truncate">82 services</span>
+          </div>
+        </div>
+        <div className="min-w-0 rounded-xl bg-surface p-3 shadow-[var(--shadow-card)] ring-1 ring-line">
+          <div className="mb-2 flex items-center justify-between gap-2">
+            <span className="text-[11.5px] font-bold text-ink">In the browser</span>
+            <span className="shrink-0 rounded bg-cobalt-soft px-1.5 py-0.5 font-mono text-[9.5px] font-medium text-cobalt-deep">JS</span>
+          </div>
+          <div className="flex flex-wrap gap-1 sm:gap-1.5">
+            {consumers.map((c) => (
+              <span key={c} className="inline-flex h-5 items-center gap-1 whitespace-nowrap rounded-md bg-paper px-1.5 text-[10.5px] font-semibold text-ink sm:h-6 sm:gap-1.5 sm:px-2 sm:text-[11px]">
+                <span className="size-1.5 shrink-0 rounded-full bg-cobalt/60" />
+                {c}
+              </span>
+            ))}
+          </div>
+        </div>
+      </div>
+    </Panel>
+  );
 }
 
 function Panel({ children, className }: { children: React.ReactNode; className?: string }) {

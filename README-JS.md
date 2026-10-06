@@ -88,9 +88,9 @@ liveDemo: '',
 
 ### Live demo links
 
-These use the same `liveDemo` field shown above. None of the resumes list a live demo, so every one starts empty.
+These use the same `liveDemo` field shown above. None of the resumes list a live demo, so the others start empty.
 
-**New Start:** its `liveDemo` is empty until you paste the deployed URL into the `newstart` entry in `src/data/projects.ts`. The Live demo button then appears on the card and in the details modal, and opens in a new tab.
+**New Start:** its `liveDemo` is `https://newstarts.in/`, so its Live demo button shows on the card and in the details modal and opens in a new tab.
 
 ### Contact and social links
 

@@ -128,8 +128,7 @@ export const projects: Project[] = [
       'A 110+ page website for NewStarts, a Bengaluru company-registration, GST, tax and compliance firm. One shared data index of 82 services drives search, pricing, a three-step enquiry wizard and eight fee and tax calculators, all in framework-free JavaScript.',
     tech: ['HTML5', 'CSS3', 'JavaScript', 'Web3Forms', 'localStorage', 'JSON-LD'],
     github: '',
-    // Paste the deployed URL (starting with https://) to show the Live demo button.
-    liveDemo: '',
+    liveDemo: 'https://newstarts.in/',
     featured: true,
     visual: 'services',
     screenshots: [

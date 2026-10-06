@@ -110,6 +110,12 @@ export function ProjectModal({ project, onClose }: { project: Project | null; on
                 </div>
               )}
 
+              {project.role && (
+                <p className="mt-6 text-[14.5px] text-ink/75">
+                  <span className="font-bold text-ink">Role:</span> {project.role}
+                </p>
+              )}
+
               <div className="mt-8 grid gap-8 md:grid-cols-[1fr_1fr] md:gap-10">
                 <DetailBlock title="Overview">
                   <p>{project.details.overview}</p>

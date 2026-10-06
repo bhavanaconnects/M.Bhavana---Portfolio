@@ -41,6 +41,11 @@ export function ProjectCard({ project, layout = 'regular', onOpen }: { project: 
           </button>
         </h3>
         <p className="mt-3 text-[15.5px] leading-relaxed text-ink/75">{project.summary}</p>
+        {project.role && (
+          <p className="mt-3 text-[13.5px] text-slate">
+            <span className="font-semibold text-ink/80">Role:</span> {project.role}
+          </p>
+        )}
 
         <ul aria-label="Technologies" className="mt-5 flex flex-wrap gap-1.5">
           {shown.map((t) => (
