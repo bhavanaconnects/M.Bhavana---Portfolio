@@ -1,0 +1,26 @@
+{
+  "title": "From the form to the database",
+  "paragraphs": [
+    "I’m a Computer Science (AI & Data Science) graduate who builds complete web applications. At Mopuri Business Solutions I’m working on a Django product for a legal compliance services company end to end: dynamic service-application forms, authentication, a profile dashboard, and a Razorpay payment flow that creates orders on the server and verifies every payment signature.",
+    "On my own projects I built a CRM on FastAPI and PostgreSQL with JWT-protected APIs and a layered backend, a scroll-driven canvas animation for a roadside assistance site, and a classifier that flags high-risk emergency cases.",
+    "Debugging across the frontend and backend is a regular part of how I work, and I’m continuing to grow as a full-stack developer through training at KodNest after completing a 240-hour Google Cloud Generative AI internship."
+  ],
+  "facts": [
+    {
+      "term": "Based in",
+      "detail": "Bengaluru, India"
+    },
+    {
+      "term": "Degree",
+      "detail": "B.Tech, Computer Science (AI & Data Science), 2022 – 2026 · CGPA 8.3"
+    },
+    {
+      "term": "Currently",
+      "detail": "Software Development Intern at Mopuri Business Solutions, and full-stack developer trainee (Python) at KodNest"
+    },
+    {
+      "term": "Works across",
+      "detail": "Frontend, backend & APIs, relational databases, applied ML"
+    }
+  ]
+}
