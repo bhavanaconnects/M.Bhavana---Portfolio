@@ -1,0 +1,21 @@
+{
+  "name": "M Bhavana",
+  "role": "Full-stack developer",
+  "location": "Bengaluru, India",
+  "stack": [
+    "Python",
+    "Django",
+    "FastAPI",
+    "React",
+    "JavaScript",
+    "SQL"
+  ],
+  "intro": "I build web applications end to end: the forms people fill in, the APIs and payment logic behind them, and the relational databases they write to. Right now I’m building a Django application with Razorpay payments for a legal compliance services company.",
+  "email": "bhavana.m.connect@gmail.com",
+  "phone": "+91 6300647921",
+  "showPhone": false,
+  "linkedin": "https://www.linkedin.com/in/bhavana-manku",
+  "github": "https://github.com/bhavanaconnects",
+  "resume": "/resume/M_Bhavana_Resume.pdf",
+  "resumeFileName": "M_Bhavana_Resume.pdf"
+}

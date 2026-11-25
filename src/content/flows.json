@@ -1,0 +1,101 @@
+[
+  {
+    "id": "payments",
+    "tab": "Payments",
+    "source": "Mopuri Business Solutions · Django",
+    "projectId": "mopuri",
+    "steps": [
+      {
+        "layer": "JavaScript",
+        "text": "Service application submitted",
+        "log": "form submitted: service application"
+      },
+      {
+        "layer": "Django",
+        "text": "Razorpay order created on the server",
+        "log": "order created server-side"
+      },
+      {
+        "layer": "Razorpay",
+        "text": "Customer completes checkout",
+        "log": "checkout completed"
+      },
+      {
+        "layer": "Django",
+        "text": "Payment signature is verified",
+        "log": "signature verified ✓"
+      },
+      {
+        "layer": "SQL",
+        "text": "Payment saved, errors logged",
+        "log": "saved to relational db · errors → log"
+      }
+    ]
+  },
+  {
+    "id": "crm",
+    "tab": "CRM API",
+    "source": "CRM Management System · FastAPI",
+    "projectId": "crm",
+    "steps": [
+      {
+        "layer": "JavaScript",
+        "text": "Dashboard asks for leads, with a JWT",
+        "log": "request + bearer token"
+      },
+      {
+        "layer": "Router",
+        "text": "Protected endpoint checks the token",
+        "log": "jwt valid ✓"
+      },
+      {
+        "layer": "Service",
+        "text": "Service layer handles the request",
+        "log": "router → service"
+      },
+      {
+        "layer": "SQLAlchemy",
+        "text": "Repository queries PostgreSQL",
+        "log": "repository → postgresql"
+      },
+      {
+        "layer": "Schema",
+        "text": "Validated JSON returned to the UI",
+        "log": "response serialised by schema"
+      }
+    ]
+  },
+  {
+    "id": "ml",
+    "tab": "ML alert",
+    "source": "Emergency Health Alert System · Scikit-learn",
+    "projectId": "health",
+    "steps": [
+      {
+        "layer": "Data",
+        "text": "Patient data comes in",
+        "log": "patient record loaded"
+      },
+      {
+        "layer": "Python",
+        "text": "Preprocessing cleans the data",
+        "log": "preprocessed"
+      },
+      {
+        "layer": "Model",
+        "text": "Classifier predicts emergency risk",
+        "log": "prediction: high risk"
+      },
+      {
+        "layer": "Rules",
+        "text": "Rule-based check on the result",
+        "log": "alert rule matched"
+      },
+      {
+        "layer": "Alert",
+        "text": "High-risk case is flagged",
+        "log": "ALERT raised ⚑"
+      }
+    ]
+  }
+]
