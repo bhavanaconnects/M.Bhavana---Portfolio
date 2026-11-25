@@ -62,7 +62,7 @@ Optional: `npm run build:single` produces one self-contained HTML file in `dist-
 In `src/content/experience.json`:
 
 ```json
-{ "id": "mopuri", "period": "Jan 2026 – Present", "current": true }
+{ "id": "mopuri", "period": "Jul 2026 – Sep 2026" }
 ```
 
 `"current": true` shows the "Ongoing" badge and the highlighted timeline dot.
@@ -181,6 +181,6 @@ public/
 
 The resumes disagreed in a few places. These choices were made:
 
-- **Mopuri dates:** Jan 2026 – Present (updated; shown as ongoing).
+- **Mopuri dates:** Jul 2026 – Sep 2026 (updated; completed internship, no "Ongoing" badge).
 - **MotionCut:** no dates are given in the resumes, so the timeline says "Dates not listed". Add `period` in `experience.json` if you want dates shown.
 - **Deloitte resume:** its unique items were left out because it looks like an older draft. That includes the Novitech internship, the Student Management System and URL Shortener projects, and a CGPA of 8.22 (the others say 8.3). Add them to the content files if you want them included.
